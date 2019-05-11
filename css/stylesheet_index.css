@@ -1,0 +1,197 @@
+/********************************************************************* FONTS **************************************************************/
+@font-face {
+  font-family: AvenirNextLTPro-Demi;
+  src: url("fonts/AvenirNextLTPro-Demi.otf");
+}
+
+/********************************************************************* BACKGROUND ***************************************************************/
+body {
+  background: url("../imagenes/planos-arquitecto.jpg") no-repeat fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  -webkit-filter: sepia(50%);
+  filter: sepia(50%);
+  overflow: hidden;
+}
+
+/********************************************************************BARRA DE NAVEGACIÓN Y MENÚ********************************************/
+
+nav {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 0.75em;
+  font-family: AvenirNextLTPro-Demi;
+  letter-spacing: 6px;
+  z-index: 10;
+
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(255, 255, 255, 0.7)),
+    to(rgba(255, 255, 255, 0))
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  font-weight: 400;
+}
+
+nav ul li {
+  margin: 30px;
+  position: relative;
+  float: left;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li:last-child {
+  padding-right: 25px;
+}
+
+span {
+  letter-spacing: 0;
+}
+
+nav img {
+  width: 21px;
+  height: 13px;
+}
+
+/**************************************************************** ANIMACION MENU PRINCIPAL ***************************************************/
+li a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+li a:hover:not(.level2):after {
+  width: 100%;
+
+  background: #101010;
+}
+
+/*********************************************************************SUBMENÙES*************************************************************/
+.level2 {
+  display: none;
+  position: absolute;
+  top: 70%;
+  left: 10px;
+  padding: 0;
+}
+
+.level2 li {
+  float: none;
+  width: 180px;
+  margin-left: 10px;
+}
+
+.level2 li a {
+  line-height: 120%;
+  padding: 10px 0px;
+}
+
+nav ul li:hover > ul {
+  display: block;
+  border-left: 1px solid black;
+}
+
+ul,
+li,
+a {
+  z-index: 10;
+}
+
+.color li a:hover {
+  color: dodgerblue;
+}
+
+/****************************************************************ANIMACION SUBMENUES****************************************************/
+.level2 li {
+  margin-left: 0;
+}
+
+.level2 li a {
+  padding-left: 10px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+}
+
+.level2 li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  -webkit-transition: left 0.3s;
+  transition: left 0.3s;
+}
+
+.level2 li a:hover:after {
+  left: 0;
+}
+
+/************************************************************************** COVER *******************************************************/
+video {
+    position: absolute; 
+    top: 0;
+	bottom: 0px; 
+	right: 0px; 
+	min-width: 100%; 
+	min-height: 100%; 
+	width: auto; 
+	height: auto; 
+	z-index: -1; 
+	overflow: hidden; 
+
+ 
+  
+ 
+}
+/********************************************************************* IFRAME **********************************************************/
+
+#ifreme{
+    width: 100%;
+    height: 510px;
+    
+}
+

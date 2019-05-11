@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../css/view.css">
+	<link rel="stylesheet" href="../css/barra_lateral.css">
+	<script src="../javascript/scripts.js"></script>
+	<title>Formulario</title>
+
+</head>
+
+<body>
+	<div id="sidebar" class="sidebar">
+		<a href="#" class="boton-cerrar" onclick="ocultar()"><img src="../imagenes/multi.png" alt="multi"/></a>
+		<ul class="menu">
+			<li><a href="../index.html">INICIO</a></li>
+			<li><a href="#">NOTICIAS</a></li>
+			<li><a href="../xml/people.xml">EQUIPO</a></li>
+			<li><a href="#">PROCESOS</a></li>
+			<li><a href="#">PROYECTOS</a></li>
+		</ul>
+	</div>
+	<div id="contenido">
+		
+		<a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()"><img id="icon" src="../imagenes/menu.png" alt=""> </a><a id="cerrar"
+			class="abrir-cerrar" href="#" onclick="ocultar()" style="font-size: 0%"> .</a>
+	</div>
+	<img id="top" src="../imagenes/top.png" alt="">
+	<div id="contenedor_formulario">
+
+		<h1><a>FORMULARIO DE CONTACTO</a></h1>
+		<form class="formulario" enctype="multipart/form-data" method="post" action="">
+			<div class="form_descripcion">
+				<h2>Formulario de contacto</h2>
+				<p>Por favor, rellene los campos</p>
+			</div>
+			<ul>
+
+				<li id="li_1">
+					<label class="descripcion" for="element_1">Nombre </label>
+					<span>
+						<input id="element_1_1" name="element_1_1" class="element text" maxlength="255" size="8"
+							value="" />
+						<label>Nombre</label>
+					</span>
+					<span>
+						<input id="element_1_2" name="element_1_2" class="element text" maxlength="255" size="14"
+							value="" />
+						<label>Apellidos</label>
+					</span>
+				</li>
+				<li id="li_2">
+					<label class="descripcion" for="element_2">Email </label>
+					<div>
+						<input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255"
+							value="" />
+					</div>
+				</li>
+				<li id="li_5">
+					<label class="descripcion" for="element_5">Asunto </label>
+					<div>
+						<select id="element_5" name="element_5">
+							<option value="" selected="selected"></option>
+							<option value="1">Primera opción</option>
+							<option value="2">Segunda opción</option>
+							<option value="3">Tercera opción</option>
+
+						</select>
+						<br><br>
+						<textarea name="" class="textarea" placeholder="Escriba aquí"></textarea>
+					</div>
+				</li>
+				<li id="li_4">
+					<label class="descripcion" for="element_4">Elija </label>
+					<span>
+						<input id="element_4_1" name="element_4" class="element radio" type="radio" value="1"
+							checked="checked" />
+						<label class="choice" for="element_4_1">Presupuesto</label>
+						<input id="element_4_2" name="element_4" class="element radio" type="radio" value="2" />
+						<label class="choice" for="element_4_2">Segunda opción</label>
+						<input id="element_4_3" name="element_4" class="element radio" type="radio" value="3" />
+						<label class="choice" for="element_4_3">Tercera opción</label>
+
+					</span>
+				</li>
+				<li id="li_3">
+					<label class="descripcion" for="element_3">Suba una imagen</label>
+					<div>
+						<input id="element_3" name="element_3" class="element file" type="file" />
+					</div>
+				</li>
+				<li class="botones">
+					<input type="hidden" name="form_id" value="63248" />
+
+					<input id="saveForm" class="boton_texto" type="submit" name="submit" value="Submit" />
+				</li>
+			</ul>
+		</form>
+
+	</div>
+	<img id="bottom" src="../imagenes/bottom.png">
+
+</body>
+
+</html>
