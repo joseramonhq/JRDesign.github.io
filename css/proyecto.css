@@ -1,6 +1,22 @@
-* {box-sizing:border-box}
+@font-face {
+    font-family: AvenirNextLTPro-Medium;
+    src: url("../fonts/AvenirNextLTPro-MediumCn.woff");
+  }
 
-/* Slideshow container */
+
+
+body{
+  box-sizing: border-box;
+  background: url('../imagenes/planos-arquitecto.jpg') no-repeat;
+  padding: 0;
+  margin: 0%;
+  background-size: cover;
+  overflow: hidden;
+  font-family:AvenirNextLTPro-Medium;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
 .contenedor {
     
   max-width: 1000px;
@@ -16,12 +32,10 @@ img{
 
 }
 
-/* Hide the images by default */
 .fotos {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -37,30 +51,30 @@ img{
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
+
 .text {
   color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+  font-size: 26px;
+  padding: 18px 12px;
+  position: relative;
+  top:-80px;
   width: 100%;
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
+
+.numeroOrden {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -68,29 +82,83 @@ img{
   top: 0;
 }
 
-/* The puntos/bullets/indicators */
+
 .punto {
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #fff;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease-in;
 }
 
 .active, .punto:hover {
-  background-color: #717171;
+  background-color: #222;
 }
 
-/* Fading animation */
+
 .irse {
   -webkit-animation-name: irse;
   -webkit-animation-duration: 1.5s;
   animation-name: irse;
   animation-duration: 1.5s;
 }
+
+p{
+    
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0 auto;
+    text-align: justify;
+    text-indent: 20px;
+    padding: 20px;
+    width: 100%;
+    margin: -60px auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+img[alt="logo"]{
+    z-index: 200;
+    width: 166px;
+    
+}
+
+#botones{
+    position: relative;
+    top: 60px;
+    text-align: center;
+    
+}
+a{
+  margin: 0;
+}
+footer{
+  background-color: rgba(0, 0, 0, .3);
+   position: absolute;
+   display: block;
+   height: 300px;;
+   width: 100%;
+   bottom: -400px;
+   color: white;
+ }
+ 
+ footer ul li{
+   display: inline;
+   margin:20px;
+ }
+ 
+ footer img{
+   width: 26px;
+ }
+ footer a{
+   text-decoration: none;
+ }
+ footer ul{
+   float: left;
+ }
+
 
 @-webkit-keyframes irse {
   from {opacity: .4}
@@ -101,3 +169,4 @@ img{
   from {opacity: .4}
   to {opacity: 1}
 }
+

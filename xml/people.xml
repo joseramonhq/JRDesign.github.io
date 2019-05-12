@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="people.xsl"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE personas[
     <!ELEMENT personas (nodo)*>
     <!ELEMENT nodo (comentario , imagen)>
@@ -9,12 +8,12 @@
     ]>
 <personas>
 	<nodo>
-		<imagen>../imagenes/art.jpg</imagen>
 		<comentario>Nuestro estudio es propiedad y está dirigido por su equipo
 			de directores de larga data que son líderes reconocidos en sus
 			respectivos campos. Reuniendo experiencia creativa, técnica y de
 			gestión, su enfoque holístico mejora el proceso de diseño y
 			construcción y contribuye al éxito de cada proyecto.</comentario>
+		<imagen>../imagenes/art.jpg</imagen>
 	</nodo>
 	<nodo>
 		<comentario>
@@ -54,3 +53,5 @@
 		<imagen>../imagenes/personaje1.jpeg</imagen>
 	</nodo>
 </personas>
+
+
