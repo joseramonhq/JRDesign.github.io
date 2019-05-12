@@ -6,6 +6,7 @@
 
 /********************************************************************* BACKGROUND ***************************************************************/
 body {
+ 
   background: url("../imagenes/planos-arquitecto.jpg") no-repeat fixed;
   background-size: cover;
   margin: 0;
@@ -141,11 +142,11 @@ a {
 }
 
 /****************************************************************ANIMACION SUBMENUES****************************************************/
-.level2 li {
+.level2 li:not(footer) {
   margin-left: 0;
 }
 
-.level2 li a {
+.level2 li a:not(footer)  {
   padding-left: 10px;
   position: relative;
   overflow: hidden;
@@ -154,7 +155,7 @@ a {
   color: #333;
 }
 
-.level2 li a:after {
+.level2 li a:not(footer):after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -166,32 +167,52 @@ a {
   transition: left 0.3s;
 }
 
-.level2 li a:hover:after {
+.level2 li a:not(footer):hover:after {
   left: 0;
 }
 
 /************************************************************************** COVER *******************************************************/
 video {
-    position: absolute; 
-    top: 0;
-	bottom: 0px; 
-	right: 0px; 
-	min-width: 100%; 
-	min-height: 100%; 
-	width: auto; 
-	height: auto; 
-	z-index: -1; 
-	overflow: hidden; 
-
- 
-  
- 
+  position: relative;
+  top: 100px;
+  width: 80%;
+  max-height: 700px;
+  display: block;
+  margin: 0 auto;
+  z-index: -1;
+  overflow: hidden;
 }
 /********************************************************************* IFRAME **********************************************************/
 
-#ifreme{
-    width: 100%;
-    height: 510px;
-    
+#ifreme {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 2000px;
+ 
+}
+/*  *********                                FOOTER                          ********** */
+footer{
+ background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  display: block;
+  height: 300px;;
+  width: 100%;
+  bottom: -400px;
+  color: white;
 }
 
+footer ul li{
+  display: inline;
+  margin:20px;
+}
+
+footer img{
+  width: 26px;
+}
+footer a{
+  text-decoration: none;
+}
+footer ul{
+  float: left;
+}
