@@ -9,42 +9,7 @@
                 <title>Document</title>
                 <link rel="stylesheet" href="../css/barra_lateral.css"/>
                 <link rel="stylesheet" href="../css/people.css"/>
-                <script src="../javascript/scripts.js"></script>
-           
-
-            </head>
-            <body>
-                <div id="sidebar" class="sidebar">
-                    <a href="#" class="boton-cerrar" onclick="ocultar()">
-                        <img src="../imagenes/multi.png" alt="multi"/>
-                    </a>
-                    <ul class="menu">
-                        <li>
-                            <a href="../index.html">INICIO</a>
-                        </li>
-                        <li>
-                            <a href="#">NOTICIAS</a>
-                        </li>
-                        <li>
-                            <a href="#">PROCESOS</a>
-                        </li>
-                        <li>
-                            <a href="#">PROYECTOS</a>
-
-<?xml version="1.0" encoding="UTF-8" ?>
-<xsl:stylesheet version="1.0" 
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:template match="/">
-        <html>
-            <head>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-                <title>Document</title>
-                <link rel="stylesheet" href="../css/barra_lateral.css"/>
-                <link rel="stylesheet" href="../css/people.css"/>
-                <script src="../javascript/scripts.js"></script>
-           
-
+                <script src="../javascript/scripts.js"></script>            
             </head>
             <body>
                 <div id="sidebar" class="sidebar">
@@ -95,33 +60,7 @@
 
                         </xsl:for-each>
                     </section>
-                    <footer>
 
-
-
-
-
-                        <div>
-                            <p>
-                                <a href="/privacy-policy">Política de privacidad y cookies</a>
-                                <br/>
-                            JR Design 2016 - 2019</p>
-                        </div>
-
-                        <div>
-                            <ul id="social">
-                                <li>
-                                    <a href="https://www.facebook.com/freefrontend" class="hoverMe" style="opacity: 0.5;">Facebook</a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/FreeFrontend" class="hoverMe" style="opacity: 0.5;">Twitter</a>
-                                </li>
-                                <li class=".last-child">
-                                    <a href="https://plus.google.com/b/108707082677362797862/collection/MLlhx" class="hoverMe" style="opacity: 0.5;">Google+</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </footer>
                 </div>
 
 
