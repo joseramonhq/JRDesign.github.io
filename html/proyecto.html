@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JRDesign</title>
+    <link rel="stylesheet" href="../css/proyecto.css">
+    <link rel="stylesheet" href="../css/barra_lateral.css">
+    <script src="../javascript/scripts.js"></script>
+    <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/x-icon">
+
+
+
+</head>
+
+
+<body onload="fotoActual(1)">
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="boton-cerrar" onclick="ocultar()"><img src="../imagenes/multi.png" alt="multi" /></a>
+        <ul class="menu">
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="../html/noticias.html">NOTICIAS</a></li>
+            <li><a href="../xml/people.xml">EQUIPO</a></li>
+            <li><a href="#">PROCESOS</a></li>
+  
+            <li><a href="../html/form.html">CONTACTO</a></li>
+        </ul>
+    </div>
+    <div id="contenido">
+
+        <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()"><img id="icono"
+                src="../imagenes/menu.png" alt=""> </a><a id="cerrar" class="abrir-cerrar" href="#" onclick="ocultar()"
+            style="font-size: 0%"> .</a>
+    </div>
+
+    <a href="../index.html"><img id="logo" src="../imagenes/logo.png" alt="logo"></a>
+    <div class="contenedor">
+
+
+
+        <div class="fotos irse">
+            <div class="numeroOrden">1 / 5</div>
+            <img src="../imagenes/slider/slide1.jpg">
+            <div class="text">La ola</div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem cupiditate ratione ex ut corporis sequi,
+                cumque atque quisquam autem dolores nostrum doloribus officia, laudantium laboriosam ipsum impedit
+                mollitia illum sunt maiores esse alias cum omnis! Tempora, similique est accusamus possimus veritatis
+                expedita molestias ullam unde odit nobis! Expedita quidem officiis dolorem voluptas aut deserunt ipsam
+                natus omnis.</p>
+
+        </div>
+
+        <div class="fotos irse">
+            <div class="numeroOrden">2 / 5</div>
+            <img src="../imagenes/slider/slide2.jpg">
+            <div class="text">La luna</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nesciunt dolorem repellendus, commodi
+                ducimus asperiores, eos dolorum in porro modi tenetur non voluptatum a molestiae recusandae? Fugit illum
+                saepe praesentium harum, iste voluptas necessitatibus in tempore. Tenetur vero ullam culpa.</p>
+        </div>
+        <div class="fotos irse">
+            <div class="numeroOrden">3 / 5</div>
+            <img src="../imagenes/slider/slide3.jpg">
+            <div class="text">El cielo</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, unde.</p>
+
+        </div>
+        <div class="fotos irse">
+            <div class="numeroOrden">4 / 5</div>
+            <img src="../imagenes/slider/slide4.jpg">
+            <div class="text">Una nube</div>
+        </div>
+        <div class="fotos irse">
+            <div class="numeroOrden">5 / 5</div>
+            <img src="../imagenes/slider/slide5.jpg">
+            <div class="text">Madera</div>
+        </div>
+
+
+        <a class="prev" onclick="avanzar(-1)">&#10094;</a>
+        <a class="next" onclick="avanzar(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div id="botones">
+        <span class="punto" onclick="fotoActual(1)"></span>
+        <span class="punto" onclick="fotoActual(2)"></span>
+        <span class="punto" onclick="fotoActual(3)"></span>
+        <span class="punto" onclick="fotoActual(4)"></span>
+        <span class="punto" onclick="fotoActual(5)"></span>
+    </div>
+    <input type="button" value="Play Music" onclick="document.getElementsByTagName('audio')[0].play()">
+    <input type="button" value="Pause Music" onclick="document.getElementsByTagName('audio')[0].pause()">
+
+    <audio loop autoplay>
+        <source src="../audio/assembly.mp3" type="audio/mpeg">
+        <p>No funciona audio</p>
+    </audio>
+
+
+
+    <footer>
+        <ul>
+            <li>2019 JRDesign. Diseño por José Ramón Hidalgo</li>
+            <li>Colaboraciones</li>
+            <li>Información de contacto</li>
+            <li>Blog</li>
+        </ul>
+
+        <ul>
+            <li><a href=""><img src="../imagenes/redesSociales/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="../imagenes/redesSociales/instagram.png" alt=""></a></li>
+            <li><a href=""><img src="../imagenes/redesSociales/gorjeo.png" alt=""></a></li>
+            <li><a href=""><img src="../imagenes/redesSociales/instagram.png" alt=""></a></li>
+        </ul>
+
+
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>

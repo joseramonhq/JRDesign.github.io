@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Equipo</title>
+    <link rel="stylesheet" href="../css/equipo.css">
+    <link rel="stylesheet" href="../css/barra_lateral.css">
+    <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/x-icon">
+    <script src="../javascript/equipoVariable.js"></script>
+    <script src="../javascript/equipo.js"></script>    
+    <script src="../javascript/scripts.js"></script>
+
+
+</head>
+
+<body onload="crearDivs()">
+    <header>
+        <h1 id="h1Equipo">EQUIPO</h1>
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="boton-cerrar" onclick="ocultar()"><img src="../imagenes/multi.png" alt="multi" /></a>
+        <ul class="menu">
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="../html/noticias.html">NOTICIAS</a></li>      
+            <li><a href="../xml/procesos.xml">PROCESOS</a></li>
+            <li><a href="../html/proyecto.html">PROYECTOS</a></li>
+            <li><a href="../html/form.html">CONTACTO</a></li>
+        </ul>
+    </div>
+    <div id="contenido">
+
+        <a id="abrir" class="abrir-cerrar" onclick="mostrar()"><img id="icono" src="../imagenes/menu.png" alt="" style="position: fixed;
+                left:2%;top:2%;
+                "> </a><a id="cerrar" class="abrir-cerrar" href="#" onclick="ocultar()" style="font-size: 0%"> .</a>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

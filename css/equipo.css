@@ -1,0 +1,102 @@
+@font-face {
+    font-family: DemiAvenirNextLTPro;
+    src: url("../fonts/AvenirNextLTPro-Demi.otf");
+}
+
+body {
+    background: url("../imagenes/planos-arquitecto.jpg") no-repeat fixed;
+    background-size: cover;
+    font-family: DemiAvenirNextLTPro;
+}
+#h1Equipo{
+    font-size: 3em;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+header,
+footer ul li a {
+
+    color: white;
+}
+
+#main {
+    background-color: white;
+    max-width: 900px;
+}
+
+footer {
+    padding: 5px;
+}
+
+body,
+#main {
+    display: flex;
+}
+
+body {
+    flex-direction: column;
+    background-color: white;
+
+    align-items: center;
+}
+
+#main {
+    display: flex;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    border: 1px solid;
+    border-width: 1px 0 0 1px;
+    align-content: space-around;
+    min-height: calc(100vh -70px);
+}
+
+.item {
+    border: 1px solid;
+    padding: 10px;
+    box-sizing: border-box;
+    flex: 1 0;
+    border-width: 0 1px 1px 0;
+    min-width: 380px;
+    margin: 20px;
+    text-align: justify;
+    
+}
+
+
+p {
+    padding-right: 20px;
+}
+
+
+footer {
+    margin-top: 20px;
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    color: white;
+ 
+   
+
+}
+
+footer ul li {
+    display: inline-flex;
+    margin: 20px;
+}
+
+footer img {
+    width: 26px;
+    filter: invert(100%);
+}
+
+footer a {
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+
+}
